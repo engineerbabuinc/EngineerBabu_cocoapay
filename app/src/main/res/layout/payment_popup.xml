@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocoapay="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg" >
+
+    <RelativeLayout
+        android:id="@+id/parenttop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingRight="10dp" >
+
+        <com.firebug.cocoapay.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:text="Payment"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            cocoapay:fontName="avenir.ttf" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/cancel_grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/close_btn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parenttop" >
+
+        <com.firebug.cocoapay.MyTextView
+            android:id="@+id/price_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Rs. 350"
+            android:textColor="@color/blue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            cocoapay:fontName="avenir.ttf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/price_score"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:layout_centerVertical="true"
+        android:layout_margin="2.9dp" >
+
+        <com.firebug.cocoapay.MyTextView
+            android:id="@+id/viewcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="View Cart"
+            android:singleLine="true"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/blue"
+            android:textSize="20sp"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyTextView>
+
+        <ImageView
+            android:id="@+id/payment_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/viewcart"
+            android:src="@drawable/blue_cart" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/nxt_arrow_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/nxt_arrow" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl2"
+        android:layout_margin="2.9dp" >
+
+        <View
+            android:id="@+id/vv1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/darker_gray" />
+
+        <com.firebug.cocoapay.MyTextView
+            android:id="@+id/creditcard_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/vv1"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:hint="Credit or Debit Card"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyTextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl3"
+        android:layout_margin="2.9dp"
+        android:background="@android:drawable/editbox_background" >
+
+        <ImageView
+            android:id="@+id/cdt_img"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/card_icon" >
+        </ImageView>
+
+        <com.firebug.cocoapay.MyEditTextView
+            android:id="@+id/edSearch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/btnSearch"
+            android:layout_toRightOf="@id/cdt_img"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:hint="Swipe or Enter Card number"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/blue"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyEditTextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rl5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl4"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <com.firebug.cocoapay.MyTextView
+            android:id="@+id/cash_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:text="Cash"
+            android:textColor="@android:color/darker_gray"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyTextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <com.firebug.cocoapay.MyButtonView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:background="#EBE7E7"
+                android:singleLine="true"
+                android:text="Rs 350"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textStyle="bold"
+                cocoapay:fontName="avenir.ttf" />
+
+            <com.firebug.cocoapay.MyButtonView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:background="#EBE7E7"
+                android:singleLine="true"
+                android:text="Rs 400"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textStyle="bold"
+                cocoapay:fontName="avenir.ttf" />
+
+            <com.firebug.cocoapay.MyButtonView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="#EBE7E7"
+                android:singleLine="true"
+                android:text="Rs 500"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textStyle="bold"
+                cocoapay:fontName="avenir.ttf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" >
+
+            <com.firebug.cocoapay.MyButtonView
+                android:id="@+id/thousand"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:background="#EBE7E7"
+                android:singleLine="true"
+                android:text="Rs 1000"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textStyle="bold"
+                cocoapay:fontName="avenir.ttf" />
+
+            <com.firebug.cocoapay.MyButtonView
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/thousand"
+                android:background="#EBE7E7"
+                android:singleLine="true"
+                android:text="Other"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:textStyle="bold"
+                cocoapay:fontName="avenir.ttf" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

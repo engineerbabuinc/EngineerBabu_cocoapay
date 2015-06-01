@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="number_btn_height">55dp</dimen>
+    
+    <!--  <dimen name="gap">10dp</dimen>
+    <dimen name="swipe_lyt">50dp</dimen>
+    <dimen name="box_lyt">50dp</dimen>
+    <dimen name="charge_lyt">120dp</dimen> -->
+
+</resources>

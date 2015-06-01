@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\Android Studio\cocoapay-android-app-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="F:\Android Studio\cocoapay-android-app-master\app\build\intermediates\pre-dexed\debug\classes-06990ba93eff292cfdc1ce4fd17c698cae3b335c.jar" />
+    </item>
+    <item
+        jar="F:\Android Studio\cocoapay-android-app-master\app\libs\universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="F:\Android Studio\cocoapay-android-app-master\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-2385a65b8cd797ab623390e83d0f6565e842a0f6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Himanshu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="F:\Android Studio\cocoapay-android-app-master\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-d72198a5a2cbb85c5f1d8486528a9fea564c7e6f.jar" />
+    </item>
+    <item
+        jar="F:\Android Studio\cocoapay-android-app-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="F:\Android Studio\cocoapay-android-app-master\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-da3574d8d3fd9e5a18ec7aa6e4f5a46c1064aaa3.jar" />
+    </item>
+
+</items>

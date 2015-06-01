@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">COCOAPAY</string>
+    <string name="welcome_msg">Welcome to COCOAPAY</string>
+    <string name="dummytext">        Lorem ipsum dolor sit amet \n\n
+Lorem ipsum dolor sit amet, ei prima equidem ius. Mutat
+graeco ut per. Quo feugait indoctum cu, nec cu atqui discere.
+Ad zril labores prodesset per, etiam abhorreant nam ea, mei
+audiam eripuit scaevola ex. Ut homero omnium quo.
+Qui ea clita decore labitur, ea qui duis aperiam fuisset. Tale
+latine eam id. Veritus commune mediocritatem duo no, nam
+possim scriptorem theophrastus id, te per vero cetero
+tincidunt. Cu vel enim exerci pertinacia, antiopam tincidunt ut
+sed, simul commodo eu nam</string>
+
+     <string-array name="list_of_countries">
+      <item >USA</item>
+      <item >Uk</item>
+      <item >Canada</item>
+      <item >Australia</item>
+      <item >France</item>
+      <item >Italy</item>
+      <item >India</item>
+      <item >China</item>
+      <item >Japan</item>
+      <item >Spain</item>
+      </string-array>
+
+</resources>

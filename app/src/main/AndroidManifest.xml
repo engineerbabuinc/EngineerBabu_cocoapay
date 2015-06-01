@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.firebug.cocoapay"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <!-- to get location using NetworkProvider -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Include next permission if you want to allow UIL to cache images on SD card -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.firebug.cocoapay.main.CocoaPayApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- TAB INDICATOR -->
+        <activity
+            android:name=".SampleTabsDefault"
+            android:label="Tabs/Default"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            
+            android:name="com.firebug.cocoapay.HomeScreen"
+            android:label="Tabs/Default"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.AddProductActivity"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name="com.firebug.cocoapay.SignInActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan">
+        </activity>
+        
+         <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name="com.firebug.cocoapay.SignUpActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan">
+        </activity>
+
+        <activity
+            android:name="com.firebug.cocoapay.Edit_Product_Activity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan">
+        </activity>
+
+
+        <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name="com.firebug.cocoapay.SignUpSignInActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan">
+        </activity>
+        
+                             <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name="com.firebug.cocoapay.SignUpTwoActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan">
+        </activity>
+        
+                                     <activity
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:name="com.firebug.cocoapay.SignUpThreeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan">
+        </activity>
+         
+         
+        
+        <activity
+            android:name="com.firebug.cocoapay.TransactionDetailsActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.PricePointsActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.AllSalesActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.MenuActivity"
+            android:label="Tabs/Default"
+            android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.SignatureActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.SupportActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.SettingsActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.ProfileActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.TipSettings"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.AddEmployeeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        <activity
+            android:name="com.firebug.cocoapay.EmployeeActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        
+        <activity
+            android:name="com.firebug.cocoapay.TaxSettings"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+        
+         <activity
+            android:name="com.firebug.cocoapay.AddTaxLevelActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize|adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

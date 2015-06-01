@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocoapay="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="60dp"
+    
+    >
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp" >
+
+        <com.firebug.cocoapay.MyTextView
+            android:id="@+id/favorite_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Favorites"
+            android:textColor="@color/blue"
+            cocoapay:fontName="avenir.ttf" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/favorite_tv"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+
+        <com.firebug.cocoapay.MyTextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/price_score"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/v1"
+            android:text="Alphabetical"
+            cocoapay:fontName="avenir.ttf" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/layout/product_edit_popup.xml -->

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocoapay="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <com.firebug.cocoapay.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Today"
+        android:id="@+id/sale_date"
+        android:textColor="@color/blue"
+        cocoapay:fontName="avenir.ttf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_launcher" />
+
+        <com.firebug.cocoapay.MyTextView
+           android:id="@+id/sale_product"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Charge"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyTextView>
+
+        <com.firebug.cocoapay.MyTextView
+              android:id="@+id/sale_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical"
+            android:text="4 prices"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyTextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_color" />
+
+</LinearLayout><!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/layout/allsales_list_item.xml -->

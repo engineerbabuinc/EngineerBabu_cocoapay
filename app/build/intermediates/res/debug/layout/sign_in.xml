@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocoapay="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/signin_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/sign_in_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin_bg"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <com.firebug.cocoapay.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_design"
+            android:hint="Email Address"
+            android:singleLine="true"
+            android:textSize="20sp"
+            cocoapay:fontName="avenir.ttf" />
+
+        <com.firebug.cocoapay.MyEditTextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_design"
+            android:hint="Password"
+            android:singleLine="true"
+            android:textSize="20sp"
+            cocoapay:fontName="avenir.ttf" />
+
+        <com.firebug.cocoapay.MyTextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="Forgot Password?"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyTextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical" >
+
+        <com.firebug.cocoapay.MyButtonView
+            android:id="@+id/signin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/signin_btn_bg"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            cocoapay:fontName="avenir.ttf" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/layout/sign_in.xml -->

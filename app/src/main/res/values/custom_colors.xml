@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!--  <color name="pink_color">#ed1b58</color>
+      <color name="or_color">#777777</color>
+      
+        <color name="black_color">#000000</color>
+        
+        	<color name="dark_slate_gray">#2F4F4F</color>
+	<color name="gray_2">#AFAFAF</color>
+	<color name="gray_1">#C0C0C0</color>
+	<color name="black">#000000</color> -->
+	
+	<color name="blue">#39A0ED</color>
+	<color name="dark_blue">#0099cc</color>
+	<color name="yellow">#FFC926</color>
+	<color name="line_color">#AAAAAA</color>
+	<color name="number_color">#444444</color>
+</resources>

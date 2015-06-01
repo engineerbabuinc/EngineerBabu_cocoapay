@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="list_of_countries">
+      <item>USA</item>
+      <item>Uk</item>
+      <item>Canada</item>
+      <item>Australia</item>
+      <item>France</item>
+      <item>Italy</item>
+      <item>India</item>
+      <item>China</item>
+      <item>Japan</item>
+      <item>Spain</item>
+      </string-array>
+    <!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="accent_green">#97e08f</color>
+    <!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/values/custom_colors.xml -->
+    <eat-comment/>
+    <color name="blue">#39A0ED</color>
+    <color name="dark_blue">#0099cc</color>
+    <color name="line_color">#AAAAAA</color>
+    <color name="number_color">#444444</color>
+    <!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="sa_green">#14a804</color>
+    <color name="stacked_green">#118504</color>
+    <!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/values/custom_colors.xml -->
+    <eat-comment/>
+    <color name="yellow">#FFC926</color>
+    <declare-styleable name="MyTextView"><attr format="string" name="fontName"/></declare-styleable>
+    <declare-styleable name="SignaturePad"><attr format="float" name="minWidth"/><attr format="float" name="maxWidth"/><attr format="color" name="penColor"/><attr format="float" name="velocityFilterWeight"/></declare-styleable>
+    <!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="box_lyt">50dp</dimen>
+    <dimen name="charge_lyt">75dp</dimen>
+    <dimen name="gap">10dp</dimen>
+    <dimen name="number_btn_height">45dp</dimen>
+    <dimen name="swipe_lyt">50dp</dimen>
+    <!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">COCOAPAY</string>
+    <string name="dummytext">        Lorem ipsum dolor sit amet \n\n
+Lorem ipsum dolor sit amet, ei prima equidem ius. Mutat
+graeco ut per. Quo feugait indoctum cu, nec cu atqui discere.
+Ad zril labores prodesset per, etiam abhorreant nam ea, mei
+audiam eripuit scaevola ex. Ut homero omnium quo.
+Qui ea clita decore labitur, ea qui duis aperiam fuisset. Tale
+latine eam id. Veritus commune mediocritatem duo no, nam
+possim scriptorem theophrastus id, te per vero cetero
+tincidunt. Cu vel enim exerci pertinacia, antiopam tincidunt ut
+sed, simul commodo eu nam</string>
+    <string name="welcome_msg">Welcome to COCOAPAY</string>
+    <!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/blue</item>
+        <item name="android:backgroundStacked">@color/blue</item>
+        <item name="android:backgroundSplit">@color/yellow</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:icon">@android:color/transparent</item>
+            <item name="android:gravity">center</item>
+        
+    </style>
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+            <item name="android:gravity">center</item>
+        
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+    </style>
+</resources>

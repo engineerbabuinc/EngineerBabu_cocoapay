@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocoapay="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/cart_item_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/ic_drawer" />
+
+        <com.firebug.cocoapay.MyTextView
+            android:id="@+id/cart_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="Rs 100"
+            cocoapay:fontName="avenir.ttf" />
+
+        <com.firebug.cocoapay.MyTextView
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+             android:id="@+id/cart_item_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            cocoapay:fontName="avenir.ttf" />
+    </LinearLayout>
+    
+     <View
+         android:id="@+id/line_sep"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/cart_item_lyt"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/black" />
+
+    <com.firebug.cocoapay.MyTextView
+        android:layout_margin="5dp"
+         android:id="@+id/cart_item_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/line_sep"
+        android:text="0"
+        cocoapay:fontName="avenir.ttf" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/cart_item_total"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:background="@android:color/black" />
+
+</RelativeLayout>

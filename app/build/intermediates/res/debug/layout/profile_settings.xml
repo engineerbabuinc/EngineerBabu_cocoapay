@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cocoapay="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:id="@+id/p_top"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_pic_box"
+        android:layout_alignParentTop="true" >
+    </RelativeLayout>
+
+    <com.firebug.cocoapay.MyButtonView
+        android:id="@+id/add_product_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/blue_btn_bg"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        cocoapay:fontName="avenir.ttf" />
+    
+    
+    <ScrollView
+                android:layout_above="@id/add_product_button"
+        android:layout_below="@id/p_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <com.firebug.cocoapay.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Name"
+            android:singleLine="true"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyEditTextView>
+
+        <com.firebug.cocoapay.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:singleLine="true"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyEditTextView>
+
+        <com.firebug.cocoapay.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:singleLine="true"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyEditTextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.firebug.cocoapay.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="City"
+                android:singleLine="true"
+                cocoapay:fontName="avenir.ttf" >
+            </com.firebug.cocoapay.MyEditTextView>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <com.firebug.cocoapay.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="State"
+                android:singleLine="true"
+                cocoapay:fontName="avenir.ttf" >
+            </com.firebug.cocoapay.MyEditTextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <com.firebug.cocoapay.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Zip Code"
+                android:inputType="number"
+                android:singleLine="true"
+                cocoapay:fontName="avenir.ttf" >
+            </com.firebug.cocoapay.MyEditTextView>
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp" />
+
+            <com.firebug.cocoapay.MyEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Phone"
+                android:inputType="number"
+                android:singleLine="true"
+                cocoapay:fontName="avenir.ttf" >
+            </com.firebug.cocoapay.MyEditTextView>
+        </LinearLayout>
+
+        <com.firebug.cocoapay.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:singleLine="true"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyEditTextView>
+
+        <com.firebug.cocoapay.MyEditTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Website"
+            android:singleLine="true"
+            cocoapay:fontName="avenir.ttf" >
+        </com.firebug.cocoapay.MyEditTextView>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout><!-- From: file:/F:/Android%20Studio/cocoapay-android-app-master/app/src/main/res/layout/profile_settings.xml -->
